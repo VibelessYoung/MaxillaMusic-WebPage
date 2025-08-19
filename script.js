@@ -1,3 +1,5 @@
+//DATA
+
 const tracks = document.querySelectorAll(".track");
 let currentAudio = null;
 let currentSource = null;
@@ -13,7 +15,6 @@ tracks.forEach(track => {
   let audio = new Audio(track.dataset.src);
 
   btn.addEventListener("click", () => {
-    // اگر یه موزیک دیگه درحال پخش بود، متوقفش کن
     if (currentAudio && currentAudio !== audio) {
       currentAudio.pause();
       currentAudio.currentTime = 0;
@@ -66,7 +67,6 @@ tracks.forEach(track => {
     }
   });
 
-  // وقتی آهنگ تموم شد
   audio.addEventListener("ended", () => {
     btn.textContent = "▶";
     btn.classList.remove("playing");

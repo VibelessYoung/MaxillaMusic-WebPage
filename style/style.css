@@ -56,10 +56,67 @@ a{
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     opacity: 60%;
+    color: #ffffff;
 }
 
 .header-icon{
     font-size: 30px;
     color: #ffffff;
     opacity: 80%;
+}
+
+.music-player {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: #222;
+}
+
+.music-title{
+    color: #ffffff;
+    opacity: 70%;
+    text-align: center;
+    margin: 40px;
+    font-size: 30px;
+}
+
+.track {
+  display: flex;
+  margin-right: 50px;
+  margin-left: 50px;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 2px solid #a020f0;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+}
+
+.play-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #a020f0;
+  cursor: pointer;
+}
+
+.play-btn:focus {
+  outline: none;
+}
+
+.visualizer {
+  flex: 1;
+  height: 50px;
+  background: #222;
+  border-radius: 5px;
+}
+
+.title {
+  min-width: 100px;
+  text-align: right;
+  font-weight: bold;
 }

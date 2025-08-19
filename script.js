@@ -1,17 +1,13 @@
-//DATA
-
 const tracks = document.querySelectorAll(".track");
 let currentAudio = null;
-let currentSource = null;
-let currentAnalyser = null;
-let currentCanvas = null;
-let ctx = null;
 let audioCtx = null;
+let drawVisual;
 
 tracks.forEach(track => {
   const btn = track.querySelector(".play-btn");
   const canvas = track.querySelector(".visualizer");
   const title = track.querySelector(".title");
+  const volumeSlider = track.querySelector(".volume"); // 🎯 ولوم هر ترک
   let audio = new Audio(track.dataset.src);
 
   btn.addEventListener("click", () => {
@@ -28,7 +24,6 @@ tracks.forEach(track => {
       btn.textContent = "⏸";
       btn.classList.add("playing");
 
-      // Web Audio API
       if (!audioCtx) audioCtx = new AudioContext();
       const source = audioCtx.createMediaElementSource(audio);
       const analyser = audioCtx.createAnalyser();
@@ -38,7 +33,7 @@ tracks.forEach(track => {
 
       const bufferLength = analyser.frequencyBinCount;
       const dataArray = new Uint8Array(bufferLength);
-      ctx = canvas.getContext("2d");
+      const ctx = canvas.getContext("2d");
 
       function draw() {
         drawVisual = requestAnimationFrame(draw);
@@ -67,8 +62,25 @@ tracks.forEach(track => {
     }
   });
 
+  volumeSlider.addEventListener("input", (e) => {
+    audio.volume = e.target.value;
+  });
+
   audio.addEventListener("ended", () => {
     btn.textContent = "▶";
     btn.classList.remove("playing");
   });
+});
+
+const volumeSliders = document.querySelectorAll(".volume");
+
+volumeSliders.forEach(slider => {
+  function updateSliderBg(e) {
+    const value = (e.target.value - e.target.min) / (e.target.max - e.target.min) * 100;
+    e.target.style.background = `linear-gradient(90deg, #a020f0 ${value}%, #333 ${value}%)`;
+  }
+
+  updateSliderBg({ target: slider });
+
+  slider.addEventListener("input", updateSliderBg);
 });

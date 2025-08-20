@@ -1,3 +1,5 @@
+/* DATA */
+
 const tracks = document.querySelectorAll(".track");
 let currentAudio = null;
 let audioCtx = null;

@@ -1,7 +1,11 @@
+/* RESET */
+
 *{
     margin: 0;
     padding: 0;
 }
+
+/* HEADER STYLE */
 
 .header{
     display: flex;
@@ -30,11 +34,6 @@
     font-size: 18px;
 }
 
-.header-banner-img{
-    width: 500px;
-    height: 500px;
-}
-
 .header a:hover {
   color: gainsboro;
   transition: 0.3s;
@@ -43,6 +42,13 @@
 
 a{
     text-decoration: none;
+}
+
+/* HEADER BANNER STYLE */
+
+.header-banner-img{
+    width: 500px;
+    height: 500px;
 }
 
 .header-banner{
@@ -73,6 +79,8 @@ a{
     color: #ffffff;
     opacity: 80%;
 }
+
+/* MUSIC PLAYER STYLE */
 
 .music-player {
   width: 100%;
@@ -168,6 +176,8 @@ a{
 .volume::-moz-range-thumb:hover {
   background: #ff00ff;
 }
+
+/* FORM STYLE */
 
 textarea {
   font: inherit;
@@ -567,6 +577,8 @@ textarea {
   /* Chrome, Safari, Edge, Opera, All browsers on iOS */
   background-color: #787c80;
 }
+
+/* FOOTER STYLE */
 
 .footer{
   font-family: "Roboto", sans-serif;

@@ -163,37 +163,44 @@
 <!-- FOOTER -->
 
 <footer class="footer">
-
-    <h1 class="footer-title">creator : amir</h1>
-
-    <hr>
-
-    <!-- FOOTER ICONS -->
-
-    <div class="socials">
-
-  <a href="https://github.com/vibelessyoung" aria-label="GitHub" target="_blank" rel="noopener">
-
-    <i class="fa-brands fa-github"></i>
+  <div class="footer-container">
     
-  </a>
+    <div class="footer-brand">
+      <h2 class="footer-logo"><i class="fa-solid fa-compact-disc"></i> MaxillaMusic</h2>
+      <p class="footer-desc">a music website for u just for better experence 🎶<br>  
+      </p>
+    </div>
 
-  <a href="https://instagram.com/vibeless.young" aria-label="Instagram" target="_blank" rel="noopener">
+    <div class="footer-links">
+      <h3>LINKS</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Trend</a></li>
+        <li><a href="#">Play</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
 
-    <i class="fa-brands fa-instagram"></i>
+    <div class="footer-socials">
+      <h3>Social</h3>
+      <div class="social-icons">
+        <a href="https://github.com/vibelessyoung" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://instagram.com/vibeless.young" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me/VibelessYoung" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+    </div>
 
-  </a>
+  </div>
 
-  <a href="https://t.me/VibelessYoung" aria-label="Telegram" target="_blank" rel="noopener">
-
-    <i class="fa-brands fa-telegram"></i>
-
-  </a>
-
-</div>
-
-
+  <div class="footer-bottom">
+    <p>© <span id="year"></span>Created by : amir</p>
+  </div>
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 
 <!-- JS -->
 

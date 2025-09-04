@@ -664,4 +664,65 @@ textarea {
   margin-top: 30px;
   font-size: 13px;
   color: rgba(255,255,255,0.6);
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .header-banner{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .track {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .volume {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-banner-title {
+        font-size: 28px;
+    }
+
+    .header-banner-txt {
+        font-size: 14px;
+    }
+
+    .music-title {
+        font-size: 22px;
+    }
+}}
+
+@media screen and (max-width: 887px) {
+  .header-banner{
+    grid-template-columns: auto;
+}
+.header-banner-img{
+  width: 100%;
+  height: 700px;
+}
+.right{
+  margin-bottom: 50px;
+}
+}
+
+@media screen and (max-width: 505px) {
+  .volume{
+    display: none;
+  }
 }

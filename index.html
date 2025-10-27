@@ -1,211 +1,208 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/style.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <title>MaxillaMusic</title>
+  </head>
 
-</head>
+  <body>
+    <!-- HEADER -->
 
-<body>
-
-  <!-- HEADER -->
-    
     <header class="header">
+      <h1 class="header-icon"><i class="fa-solid fa-compact-disc"></i></h1>
 
-        <h1 class="header-icon"><i class="fa-solid fa-compact-disc"></i></h1>
+      <ul>
+        <a href="#"><li>Home</li></a>
 
-        <ul>
+        <a href="#"><li>Trend</li></a>
 
-            <a href="#"><li>Home</li></a>
+        <a href="#"><li>search</li></a>
 
-            <a href="#"><li>Trend</li></a>
-
-            <a href="#"><li>search</li></a>
-
-            <a href="#"><li>play</li></a>
-
-        </ul>
-
+        <a href="#"><li>play</li></a>
+      </ul>
     </header>
 
     <!-- HEADER BANNER -->
-    
 
     <section class="header-banner">
+      <section class="left">
+        <img class="header-banner-img" src="./images/icon.jpg" alt="" />
+      </section>
 
-        <section class="left">
+      <section class="right">
+        <h1 class="header-banner-title">MAXILLA MUSIC</h1>
 
-            <img class="header-banner-img" src="./images/icon.jpg" alt="">
-
-        </section>
-
-        <section class="right">
-
-            <h1 class="header-banner-title">MAXILLA MUSIC</h1>
-
-            <p class="header-banner-txt">this is a website you can find and listen to any music<br>
-            so when you come to ts site please have airpod or handsfree or headphone<br>
-        idk just have a music player ;)</p>
-
-        </section>
-
+        <p class="header-banner-txt">
+          this is a website you can find and listen to any music<br />
+          so when you come to ts site please have airpod or handsfree or
+          headphone<br />
+          idk just have a music player ;)
+        </p>
+      </section>
     </section>
 
     <!-- MUSIC PLAYER -->
 
     <section class="music-player">
+      <h2 class="music-title">Phonk</h2>
 
-        <h2 class="music-title">Phonk</h2>
+      <div class="track" data-src="musics/Phonk House.mp3">
+        <button class="play-btn">▶</button>
 
-  <div class="track" data-src="musics/Phonk House.mp3">
+        <canvas class="visualizer"></canvas>
 
-    <button class="play-btn">▶</button>
+        <span class="title">PHONK HOUSE</span>
 
-    <canvas class="visualizer"></canvas>
-
-    <span class="title">PHONK HOUSE</span>
-
-    <input type="range" min="0" max="1" step="0.01" class="volume">
-
-  </div>
-
-  <div class="track" data-src="musics/phonk house 2.mp3">
-
-    <button class="play-btn">▶</button>
-
-    <canvas class="visualizer"></canvas>
-
-    <span class="title">PHONK HOUSE 2</span>
-
-    <input type="range" min="0" max="1" step="0.01" class="volume">
-
-  </div>
-
-  <div class="track" data-src="musics/GHOSTHACK.mp3">
-
-    <button class="play-btn">▶</button>
-
-    <canvas class="visualizer"></canvas>
-
-    <span class="title">GHOSTHACK</span>
-
-    <input type="range" min="0" max="1" step="0.01" class="volume">
-
-  </div>
-
-  <div class="track" data-src="musics/ritmadinha.mp3">
-
-    <button class="play-btn">▶</button>
-
-    <canvas class="visualizer"></canvas>
-
-    <span class="title">RITMADINHA</span>
-
-    <input type="range" min="0" max="1" step="0.01" class="volume">
-
-  </div>
-
-  <h2 class="music-title">soon...</h2>
-
-</section>
-
-<!-- COMMENTS -->
-
-<section class="comments">
-
-    <h1 class="first-heading">Write<span class="u-italic u-transparent">comment.</span></h1>
-
-    <form action="#" class="form">
-                    
-        <textarea class="form__textarea" id="textarea" spellcheck="false" maxlength="150" type="text"
-            placeholder="Enter feedback"></textarea>
-                    
-        <label for="textarea" class="form__label">Enter your comment here, remember to <span
-            class="u-medium">#hashtag</span> the songName <i
-            class="fa-solid fa-pen form__icon"></i></label>
-                    
-        <div class="form__bottom">
-                        
-        <p class="counter u-italic">150</p>
-                        
-        <button class="submit-btn">
-                            
-        <span class="submit-btn__text">Submit</span>
-                        
-        </button>
-                    
-        </div>
-                
-        </form>
-
-</section>
-
-<ol class="feedbacks">
-            
-</ol>
-
-<!-- FOOTER -->
-
-<footer class="footer">
-  <div class="footer-container">
-    
-    <div class="footer-brand">
-      <h2 class="footer-logo"><i class="fa-solid fa-compact-disc"></i> MaxillaMusic</h2>
-      <p class="footer-desc">a music website for u just for better experence 🎶<br>  
-      </p>
-    </div>
-
-    <div class="footer-links">
-      <h3>LINKS</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Trend</a></li>
-        <li><a href="#">Play</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-socials">
-      <h3>Social</h3>
-      <div class="social-icons">
-        <a href="https://github.com/vibelessyoung" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://instagram.com/vibeless.young" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://t.me/VibelessYoung" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <input type="range" min="0" max="1" step="0.01" class="volume" />
       </div>
-    </div>
 
-  </div>
+      <div class="track" data-src="musics/phonk house 2.mp3">
+        <button class="play-btn">▶</button>
 
-  <div class="footer-bottom">
-    <p>© <span id="year"></span>Created by : amir</p>
-  </div>
-</footer>
+        <canvas class="visualizer"></canvas>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+        <span class="title">PHONK HOUSE 2</span>
 
+        <input type="range" min="0" max="1" step="0.01" class="volume" />
+      </div>
 
-<!-- JS -->
+      <div class="track" data-src="musics/GHOSTHACK.mp3">
+        <button class="play-btn">▶</button>
 
-<script src="script.js"></script>
-    
-</body>
+        <canvas class="visualizer"></canvas>
 
+        <span class="title">GHOSTHACK</span>
+
+        <input type="range" min="0" max="1" step="0.01" class="volume" />
+      </div>
+
+      <div class="track" data-src="musics/ritmadinha.mp3">
+        <button class="play-btn">▶</button>
+
+        <canvas class="visualizer"></canvas>
+
+        <span class="title">RITMADINHA</span>
+
+        <input type="range" min="0" max="1" step="0.01" class="volume" />
+      </div>
+
+      <h2 class="music-title">soon...</h2>
+    </section>
+
+    <!-- COMMENTS -->
+
+    <section class="comments">
+      <h1 class="first-heading">
+        Write<span class="u-italic u-transparent"> comment.</span>
+      </h1>
+
+      <form action="#" class="form">
+        <textarea
+          class="form__textarea"
+          id="textarea"
+          spellcheck="false"
+          maxlength="150"
+          type="text"
+          placeholder="Enter feedback"
+        ></textarea>
+
+        <label for="textarea" class="form__label"
+          >Enter your comment here, remember to
+          <span class="u-medium">#hashtag</span> the songName
+          <i class="fa-solid fa-pen form__icon"></i
+        ></label>
+
+        <div class="form__bottom">
+          <p class="counter u-italic">150</p>
+
+          <button class="submit-btn">
+            <span class="submit-btn__text">Submit</span>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <ol class="feedbacks"></ol>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2 class="footer-logo">
+            <i class="fa-solid fa-compact-disc"></i> MaxillaMusic
+          </h2>
+          <p class="footer-desc">
+            a music website for u just for better experence 🎶<br />
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>LINKS</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trend</a></li>
+            <li><a href="#">Play</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-socials">
+          <h3>Social</h3>
+          <div class="social-icons">
+            <a
+              href="https://github.com/vibelessyoung"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://instagram.com/vibeless.young"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://t.me/VibelessYoung"
+              target="_blank"
+              aria-label="Telegram"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span>Created by : amir</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+  </body>
 </html>

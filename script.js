@@ -5,11 +5,11 @@ let currentAudio = null;
 let audioCtx = null;
 let drawVisual;
 
-tracks.forEach(track => {
+tracks.forEach((track) => {
   const btn = track.querySelector(".play-btn");
   const canvas = track.querySelector(".visualizer");
   const title = track.querySelector(".title");
-  const volumeSlider = track.querySelector(".volume"); // 🎯 ولوم هر ترک
+  const volumeSlider = track.querySelector(".volume");
   let audio = new Audio(track.dataset.src);
 
   btn.addEventListener("click", () => {
@@ -76,9 +76,10 @@ tracks.forEach(track => {
 
 const volumeSliders = document.querySelectorAll(".volume");
 
-volumeSliders.forEach(slider => {
+volumeSliders.forEach((slider) => {
   function updateSliderBg(e) {
-    const value = (e.target.value - e.target.min) / (e.target.max - e.target.min) * 100;
+    const value =
+      ((e.target.value - e.target.min) / (e.target.max - e.target.min)) * 100;
     e.target.style.background = `linear-gradient(90deg, #a020f0 ${value}%, #333 ${value}%)`;
   }
 
@@ -86,7 +87,6 @@ volumeSliders.forEach(slider => {
 
   slider.addEventListener("input", updateSliderBg);
 });
-
 
 /* DATA */
 
@@ -134,7 +134,7 @@ const formhandler = (event) => {
     return;
   }
 
-  //ADD TWITTES
+  //ADD COMMENTS
   const hashtag = txt.split(" ").find((word) => word.includes("#"));
   const company = hashtag.substring(1);
   const date = 0;
@@ -181,4 +181,3 @@ const clickhandler = (event) => {
     clickedEL.closest(".feedback").classList.toggle("feedback--expand");
   }
 };
-

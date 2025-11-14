@@ -1,17 +1,19 @@
-# MaxillaMusic
+### 🎵 MaxillaMusic
 
-وب‌سایت MaxillaMusic یک پروژه مدرن و زیبا برای نمایش و پخش موزیک به صورت آنلاین است. این پروژه با استفاده از HTML، CSS و JavaScript ساخته شده و مناسب برای استفاده در پلی لیست های شخصی، نمونه‌ موزیک ها یا به عنوان یک قالب پایه برای توسعه بیشتر هست.
-
----
-
-# ویژگی ها
-- طراحی مدرن
-- پخش موزیک به صورت آنلاین
-- استفاده از افکت های اکولایزر در پخش موزیک
-- دارای بخش گذاشتن کامنت
+A modern and immersive music application—streaming your favorite tracks, discovering new artists, and managing playlists with ease.
 
 ---
 
-# شروع
+### 🚀 Features
+- 🎧 Play songs 
+- 🔍 Discover different musics 
+- 📱 Responsive design for both desktop and mobile  
+- 🧠 Smooth UI/UX for effortless music enjoyment
 
-برای شروع کافیه پروژه رو کلون کنید و از موزیک های مورد علاقتون برای تغییر موزیک های فعلی یا اضافه کردن موارد جدید استفاده کنید.
+---
+
+### ⚙️ Installation & Run
+
+```bash
+git clone https://github.com/VibelessYoung/MaxillaMusic.git
+cd MaxillaMusic
